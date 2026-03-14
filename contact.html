@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        brand: { cream: '#F5F0E8', green: '#2D4A3E', gold: '#B8860B', mist: '#EBF0EE', 'green-light': '#3D5E4F' }
+      },
+      fontFamily: {
+        serif: ['"Cormorant Garamond"', 'serif'],
+        sans: ['Raleway', 'sans-serif'],
+      },
+    }
+  }
+}
+</script>
+<style>
+body { font-family: 'Raleway', sans-serif; background-color: #F5F0E8; color: #2D4A3E; }
+h1, h2, h3, h4, .font-serif, .font-display { font-family: 'Cormorant Garamond', serif; }
+.section-spacing { padding-top: 120px; padding-bottom: 120px; }
+.letter-spacing-wide { letter-spacing: 0.15em; }
+</style>
+<title>Contact | Juniper Business Consulting</title>
+<meta name="description" content="Book a discovery call with Juniper Business Consulting."/>
+</head>
+<body class="bg-brand-cream text-brand-green">
+<nav class="sticky top-0 z-50 bg-brand-cream/90 backdrop-blur-md border-b border-brand-green/10">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+<a href="index.html" class="font-sans text-sm lg:text-base font-bold tracking-[0.15em] uppercase text-brand-green flex-shrink-0">Juniper Business Consulting</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-xs uppercase tracking-widest font-semibold hover:text-brand-gold transition-colors" href="index.html">Home</a>
+<a class="text-xs uppercase tracking-widest font-semibold hover:text-brand-gold transition-colors" href="services.html">Services</a>
+<a class="text-xs uppercase tracking-widest font-semibold hover:text-brand-gold transition-colors" href="who-we-help.html">Who We Help</a>
+<a class="text-xs uppercase tracking-widest font-semibold hover:text-brand-gold transition-colors" href="why-juniper.html">Why Juniper</a>
+<a class="text-xs uppercase tracking-widest font-semibold hover:text-brand-gold transition-colors" href="insights.html">Insights</a>
+<a class="text-xs uppercase tracking-widest font-semibold text-brand-gold" href="contact.html">Contact</a>
+</div>
+<button class="md:hidden text-brand-green"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</nav>
+<!-- Page Hero -->
+<header class="section-padding bg-cream text-center px-6">
+<div class="max-w-3xl mx-auto">
+<h1 class="text-5xl md:text-7xl font-bold mb-8">Get in Touch</h1>
+<p class="text-lg md:text-xl font-light leading-relaxed opacity-90">
+                Whether you need a full outsourced finance function or just want to explore how we can help — we'd love to hear from you.
+            </p>
+</div>
+</header>
+<!-- Two-Column Layout: Form & Details -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+<div class="grid lg:grid-cols-2 gap-20">
+<!-- Left: Form -->
+<div class="space-y-12">
+<div>
+<h2 class="text-4xl font-semibold mb-4">Book a Discovery Call</h2>
+<p class="text-lg font-light opacity-80">Schedule a 30-minute call to discuss your business needs and how our consulting services can drive your growth.</p>
+</div>
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-xs uppercase tracking-wider font-semibold opacity-70">Name</label>
+<input class="bg-transparent border-b border-brand-green/30 focus:border-brand-gold outline-none py-3 transition-colors px-0 rounded-none border-t-0 border-x-0 focus:ring-0" placeholder="Your full name" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs uppercase tracking-wider font-semibold opacity-70">Email Address</label>
+<input class="bg-transparent border-b border-brand-green/30 focus:border-brand-gold outline-none py-3 transition-colors px-0 rounded-none border-t-0 border-x-0 focus:ring-0" placeholder="email@company.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs uppercase tracking-wider font-semibold opacity-70">Company</label>
+<input class="bg-transparent border-b border-brand-green/30 focus:border-brand-gold outline-none py-3 transition-colors px-0 rounded-none border-t-0 border-x-0 focus:ring-0" placeholder="Business name" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs uppercase tracking-wider font-semibold opacity-70">How can we help?</label>
+<textarea class="bg-transparent border-b border-brand-green/30 focus:border-brand-gold outline-none py-3 transition-colors px-0 rounded-none border-t-0 border-x-0 focus:ring-0 resize-none" placeholder="Tell us briefly about your project or inquiry" rows="4"></textarea>
+</div>
+<button class="bg-brand-green text-cream px-10 py-4 uppercase text-xs tracking-widest font-bold hover:bg-brand-green/90 transition-all rounded shadow-sm" type="submit">
+                        Send Message
+                    </button>
+</form>
+</div>
+<!-- Right: Contact Details -->
+<div class="lg:pl-20 space-y-12">
+<div>
+<h2 class="text-4xl font-semibold mb-8">Contact Details</h2>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-gold">mail</span>
+<div>
+<p class="text-xs uppercase tracking-widest font-bold opacity-60 mb-1">Email</p>
+<a class="text-lg hover:text-brand-gold transition-colors" href="/cdn-cgi/l/email-protection#0b666e63666e7f4b61657b79686465787e677f62656c256864257e60"><span class="__cf_email__" data-cfemail="38555d50555d4c785256484a5b57564b4d544c51565f165b57164d53">[email&#160;protected]</span></a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-gold">call</span>
+<div>
+<p class="text-xs uppercase tracking-widest font-bold opacity-60 mb-1">Phone</p>
+<a class="text-lg hover:text-brand-gold transition-colors" href="tel:07593745465">07593 745 465</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-gold">language</span>
+<div>
+<p class="text-xs uppercase tracking-widest font-bold opacity-60 mb-1">Website</p>
+<a class="text-lg hover:text-brand-gold transition-colors" href="https://juniperbusiness.co.uk" target="_blank">juniperbusiness.co.uk</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-gold">group</span>
+<div>
+<p class="text-xs uppercase tracking-widest font-bold opacity-60 mb-1">LinkedIn</p>
+<a class="text-lg hover:text-brand-gold transition-colors" href="https://linkedin.com/in/mdurge" target="_blank">linkedin.com/in/mdurge</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-gold">location_on</span>
+<div>
+<p class="text-xs uppercase tracking-widest font-bold opacity-60 mb-1">Location</p>
+<p class="text-lg">Based in Hertfordshire, serving clients across the UK.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="p-8 bg-brand-green/5 border-l-2 border-brand-gold">
+<p class="italic text-lg">"Prefer email? Drop us a line and we'll respond within 24 hours."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="section-padding bg-cream/50 border-y border-brand-green/5">
+<div class="max-w-4xl mx-auto px-6">
+<h2 class="text-4xl md:text-5xl font-bold text-center mb-20">Common Questions</h2>
+<div class="space-y-12">
+<div class="pb-8 border-b border-brand-green/10">
+<h3 class="text-2xl font-semibold mb-3">How quickly can you start?</h3>
+<p class="font-light text-lg opacity-80">Typically within 1-2 weeks of our initial conversation.</p>
+</div>
+<div class="pb-8 border-b border-brand-green/10">
+<h3 class="text-2xl font-semibold mb-3">Do you work with businesses outside London?</h3>
+<p class="font-light text-lg opacity-80">Yes. We work with clients across the UK, both remotely and on-site.</p>
+</div>
+<div class="pb-8 border-b border-brand-green/10">
+<h3 class="text-2xl font-semibold mb-3">What's the minimum engagement?</h3>
+<p class="font-light text-lg opacity-80">We tailor every engagement to your needs. There's no fixed minimum — we'll find the right level of support together.</p>
+</div>
+<div>
+<h3 class="text-2xl font-semibold mb-3">Can you work alongside our existing accountant?</h3>
+<p class="font-light text-lg opacity-80">Absolutely. We complement your accountant by handling the day-to-day finance operations, reporting and compliance they don't cover.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="section-padding bg-brand-green text-cream text-center px-6">
+<div class="max-w-3xl mx-auto">
+<h2 class="text-5xl md:text-6xl font-bold mb-10">Ready to take the first step?</h2>
+<a class="inline-block border-2 border-brand-gold text-cream px-10 py-4 uppercase text-xs tracking-widest font-bold hover:bg-brand-gold hover:text-brand-green transition-all rounded" href="#">
+                Book a Discovery Call
+            </a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-brand-green text-brand-cream pt-20 pb-10 px-6 lg:px-12">
+<div class="max-w-7xl mx-auto">
+<div class="grid md:grid-cols-3 gap-16 mb-16">
+<div>
+<span class="text-lg font-bold tracking-[0.15em] uppercase block mb-6">Juniper Business Consulting</span>
+<p class="text-brand-cream/60 text-sm font-light leading-relaxed max-w-sm">Outsourced finance, compliance and business support for growing companies. We build and run the finance function your business needs.</p>
+</div>
+<div>
+<h4 class="text-xs uppercase tracking-widest font-bold mb-6 text-brand-gold">Navigation</h4>
+<ul class="space-y-3 text-sm font-light">
+<li><a class="hover:text-brand-gold transition-colors" href="index.html">Home</a></li>
+<li><a class="hover:text-brand-gold transition-colors" href="services.html">Services</a></li>
+<li><a class="hover:text-brand-gold transition-colors" href="who-we-help.html">Who We Help</a></li>
+<li><a class="hover:text-brand-gold transition-colors" href="why-juniper.html">Why Juniper</a></li>
+<li><a class="hover:text-brand-gold transition-colors" href="insights.html">Insights</a></li>
+<li><a class="hover:text-brand-gold transition-colors" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs uppercase tracking-widest font-bold mb-6 text-brand-gold">Contact</h4>
+<ul class="space-y-3 text-sm font-light">
+<li><a class="hover:text-brand-gold transition-colors" href="mailto:mehmet@jnprconsulting.co.uk">mehmet@jnprconsulting.co.uk</a></li>
+<li>07593 745 465</li>
+<li><a class="hover:text-brand-gold transition-colors" href="https://juniperbusiness.co.uk" target="_blank">juniperbusiness.co.uk</a></li>
+<li><a class="hover:text-brand-gold transition-colors" href="https://linkedin.com/in/mdurge" target="_blank">LinkedIn</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-brand-cream/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[10px] uppercase tracking-widest text-brand-cream/40">&copy; 2025 Juniper Business Consulting Limited. All Rights Reserved.</p>
+<div class="flex gap-8">
+<a class="text-[10px] uppercase tracking-widest text-brand-cream/40 hover:text-brand-cream transition-colors" href="#">Privacy Policy</a>
+<a class="text-[10px] uppercase tracking-widest text-brand-cream/40 hover:text-brand-cream transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
