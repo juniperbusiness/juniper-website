@@ -24,8 +24,13 @@ tailwind.config = {
 <style>
 body { font-family: 'Raleway', sans-serif; background-color: #F5F0E8; color: #2D4A3E; }
 h1, h2, h3, h4, .font-serif, .font-display { font-family: 'Cormorant Garamond', serif; }
-.section-spacing { padding-top: 120px; padding-bottom: 120px; }
-.letter-spacing-wide { letter-spacing: 0.15em; }
+.prose h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.75rem; font-weight: 600; margin-top: 2.5rem; margin-bottom: 1rem; color: #2D4A3E; }
+.prose h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; color: #2D4A3E; }
+.prose p { margin-bottom: 1.25rem; line-height: 1.8; font-weight: 300; }
+.prose ul, .prose ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+.prose li { margin-bottom: 0.5rem; line-height: 1.7; font-weight: 300; }
+.prose strong { font-weight: 600; }
+.prose a { color: #B8860B; text-decoration: underline; }
 </style>
 <title>Insights | Juniper Business Consulting</title>
 <meta name="description" content="Practical thinking on finance, compliance and operations for growing businesses."/>
@@ -48,119 +53,96 @@ h1, h2, h3, h4, .font-serif, .font-display { font-family: 'Cormorant Garamond', 
 <!-- Hero Section -->
 <header class="py-24 lg:py-32 px-6 text-center">
 <div class="max-w-3xl mx-auto">
-<h1 class="text-6xl lg:text-7xl font-light mb-6">Insights</h1>
+<h1 class="text-6xl lg:text-7xl font-serif font-light mb-6">Insights</h1>
 <p class="text-lg lg:text-xl font-light opacity-90 leading-relaxed max-w-2xl mx-auto">
-                Practical thinking on finance, compliance and operations for growing businesses.
-            </p>
+Practical thinking on finance, compliance and operations for growing businesses.
+</p>
 </div>
 </header>
+
 <main class="max-w-7xl mx-auto px-6 pb-32">
 <!-- Featured Article -->
-<section class="mb-32">
-<div class="relative group overflow-hidden border border-subtle rounded-xl bg-brand-cream flex flex-col lg:flex-row items-stretch">
-<div class="w-full lg:w-1/2 bg-brand-green/5 flex items-center justify-center p-16"><span class="material-symbols-outlined text-brand-green/20" style="font-size:80px">article</span></div>
-<div class="w-full lg:w-1/2 p-8 lg:p-16 flex flex-col justify-center">
+<section class="mb-24">
+<div class="border border-brand-green/10 bg-brand-cream p-8 lg:p-16">
 <div class="flex items-center gap-4 mb-6">
-<span class="text-xs font-bold tracking-widest uppercase text-brand-green">Finance Strategy</span>
-<span class="text-xs text-brand-green/60 uppercase tracking-widest">March 2026</span>
+<span class="text-xs font-bold tracking-widest uppercase text-brand-gold">Tax</span>
+<span class="text-xs text-brand-green/50 uppercase tracking-widest">February 2023</span>
 </div>
-<h2 class="text-4xl lg:text-5xl font-medium mb-8 leading-tight">
-                        When Does Your Business Need an Outsourced Finance Function?
-                    </h2>
-<p class="text-lg font-light leading-relaxed mb-10 opacity-80">
-                        If your founder is still doing the bookkeeping, your reports are late, or your compliance deadlines cause panic — it might be time to bring in structured support.
-                    </p>
-<a class="inline-flex items-center gap-2 text-brand-gold font-semibold tracking-widest uppercase text-sm group-hover:gap-4 transition-all" href="insights.html">
-                        Read More
-                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+<h2 class="text-3xl lg:text-5xl font-serif font-medium mb-8 leading-tight">What is CT600?</h2>
+<a class="inline-flex items-center gap-2 text-brand-gold font-semibold tracking-widest uppercase text-sm hover:opacity-70" href="blog-what-is-ct600.html">
+Read More <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
 </div>
-</div>
 </section>
+
 <!-- Article Grid -->
-<section class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-24">
-<!-- Card 1 -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20">
+
 <article class="flex flex-col">
 <div class="h-2 bg-brand-green/10 mb-8 rounded"></div>
 <div class="flex items-center gap-3 mb-4">
-<span class="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-green">Finance</span>
-<span class="text-[10px] text-brand-green/50 uppercase tracking-widest">February 2026</span>
+<span class="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-gold">Valuation</span>
+<span class="text-[10px] text-brand-green/50 uppercase tracking-widest">July 2022</span>
 </div>
-<h3 class="text-3xl font-medium mb-4 leading-snug">5 Finance Mistakes Growing Companies Make</h3>
-<a class="mt-auto text-brand-gold text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity" href="#" onclick="event.preventDefault()">Coming Soon</a>
+<h3 class="text-2xl md:text-3xl font-serif font-medium mb-4 leading-snug">Why Do Startups Need Valuation?</h3>
+<a class="mt-auto text-brand-gold text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity" href="blog-why-do-startups-need-valuation.html">Read Article</a>
 </article>
-<!-- Card 2 -->
 <article class="flex flex-col">
 <div class="h-2 bg-brand-green/10 mb-8 rounded"></div>
 <div class="flex items-center gap-3 mb-4">
-<span class="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-green">Compliance</span>
-<span class="text-[10px] text-brand-green/50 uppercase tracking-widest">January 2026</span>
+<span class="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-gold">Funding</span>
+<span class="text-[10px] text-brand-green/50 uppercase tracking-widest">January 2022</span>
 </div>
-<h3 class="text-3xl font-medium mb-4 leading-snug">How to Prepare for Your First External Audit</h3>
-<a class="mt-auto text-brand-gold text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity" href="#" onclick="event.preventDefault()">Coming Soon</a>
+<h3 class="text-2xl md:text-3xl font-serif font-medium mb-4 leading-snug">Short Notes 2 - “How Much" money you should raise?</h3>
+<a class="mt-auto text-brand-gold text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity" href="blog-short-notes-2-how-much-money-you-should-raise.html">Read Article</a>
 </article>
-<!-- Card 3 -->
 <article class="flex flex-col">
 <div class="h-2 bg-brand-green/10 mb-8 rounded"></div>
 <div class="flex items-center gap-3 mb-4">
-<span class="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-green">Operations</span>
-<span class="text-[10px] text-brand-green/50 uppercase tracking-widest">December 2025</span>
+<span class="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-gold">Funding</span>
+<span class="text-[10px] text-brand-green/50 uppercase tracking-widest">January 2022</span>
 </div>
-<h3 class="text-3xl font-medium mb-4 leading-snug">Cash Flow Visibility: Why It's the #1 Priority for Scaling Businesses</h3>
-<a class="mt-auto text-brand-gold text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity" href="#" onclick="event.preventDefault()">Coming Soon</a>
+<h3 class="text-2xl md:text-3xl font-serif font-medium mb-4 leading-snug">Short Notes 1- Is my startup going to be successful!?</h3>
+<a class="mt-auto text-brand-gold text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity" href="blog-short-notes-1-is-my-startup-going-to-be-successful.html">Read Article</a>
 </article>
-<!-- Card 4 -->
 <article class="flex flex-col">
 <div class="h-2 bg-brand-green/10 mb-8 rounded"></div>
 <div class="flex items-center gap-3 mb-4">
-<span class="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-green">Finance Strategy</span>
-<span class="text-[10px] text-brand-green/50 uppercase tracking-widest">November 2025</span>
+<span class="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-gold">SaaS</span>
+<span class="text-[10px] text-brand-green/50 uppercase tracking-widest">December 2021</span>
 </div>
-<h3 class="text-3xl font-medium mb-4 leading-snug">What a Finance Business Partner Actually Does</h3>
-<a class="mt-auto text-brand-gold text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity" href="#" onclick="event.preventDefault()">Coming Soon</a>
+<h3 class="text-2xl md:text-3xl font-serif font-medium mb-4 leading-snug">SaaS Metrics for Startups Wants to Raise Capital</h3>
+<a class="mt-auto text-brand-gold text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity" href="blog-2021-12-15-saas-metrics-for-startups-wants-to-raise-capital.html">Read Article</a>
 </article>
-<!-- Card 5 -->
 <article class="flex flex-col">
 <div class="h-2 bg-brand-green/10 mb-8 rounded"></div>
 <div class="flex items-center gap-3 mb-4">
-<span class="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-green">Business Support</span>
-<span class="text-[10px] text-brand-green/50 uppercase tracking-widest">October 2025</span>
+<span class="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-gold">Startups</span>
+<span class="text-[10px] text-brand-green/50 uppercase tracking-widest">August 2021</span>
 </div>
-<h3 class="text-3xl font-medium mb-4 leading-snug">The Hidden Costs of Not Having an HR Process</h3>
-<a class="mt-auto text-brand-gold text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity" href="#" onclick="event.preventDefault()">Coming Soon</a>
-</article>
-<!-- Card 6 -->
-<article class="flex flex-col">
-<div class="h-2 bg-brand-green/10 mb-8 rounded"></div>
-<div class="flex items-center gap-3 mb-4">
-<span class="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-green">Finance</span>
-<span class="text-[10px] text-brand-green/50 uppercase tracking-widest">September 2025</span>
-</div>
-<h3 class="text-3xl font-medium mb-4 leading-snug">Budgeting for Growth: A Practical Guide for SME Founders</h3>
-<a class="mt-auto text-brand-gold text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity" href="#" onclick="event.preventDefault()">Coming Soon</a>
+<h3 class="text-2xl md:text-3xl font-serif font-medium mb-4 leading-snug">Are You a Startup with No Finance Background? Here Are How to Analyse Your Financials in 5 Steps</h3>
+<a class="mt-auto text-brand-gold text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity" href="blog-blog-post-one-ttnfn.html">Read Article</a>
 </article>
 </section>
+
 <!-- Newsletter CTA -->
-<section class="mt-48 py-20 px-6 border-t border-subtle text-center">
+<section class="mt-32 py-20 px-6 border-t border-brand-green/10 text-center">
 <div class="max-w-2xl mx-auto">
-<h2 class="text-4xl font-medium mb-4">Stay informed</h2>
+<h2 class="text-4xl font-serif font-medium mb-4">Stay informed</h2>
 <p class="text-lg font-light mb-10 opacity-80">Get monthly insights on scaling your business operations and financial strategy.</p>
-<form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
-<input class="flex-1 bg-transparent border-brand-green/20 rounded-lg px-6 py-4 text-brand-green focus:ring-brand-gold focus:border-brand-green placeholder:text-brand-green/40" placeholder="Email Address" type="email"/>
-<button class="bg-brand-green text-brand-cream px-10 py-4 rounded-lg font-semibold tracking-widest uppercase text-xs hover:bg-brand-green/90 transition-all" type="submit">
-                        Subscribe
-                    </button>
-</form>
+<div class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-1 bg-transparent border border-brand-green/20 px-6 py-4 text-brand-green focus:ring-brand-gold focus:border-brand-gold placeholder:text-brand-green/40" placeholder="Email Address" type="email"/>
+<button class="px-10 py-4 font-semibold tracking-widest uppercase text-xs transition-all" style="background-color:#2D4A3E; color:#F5F0E8;">Subscribe</button>
+</div>
 </div>
 </section>
 </main>
-<!-- Footer -->
 <footer class="bg-brand-green text-brand-cream pt-20 pb-10 px-6 lg:px-12">
 <div class="max-w-7xl mx-auto">
 <div class="grid md:grid-cols-3 gap-16 mb-16">
 <div>
 <span class="text-lg font-bold tracking-[0.15em] uppercase block mb-6">Juniper Business Consulting</span>
-<p class="text-brand-cream/60 text-sm font-light leading-relaxed max-w-sm">Outsourced finance, compliance and business support for growing companies. We build and run the finance function your business needs.</p>
+<p class="text-brand-cream/60 text-sm font-light leading-relaxed max-w-sm">Outsourced finance, compliance and business support for growing companies.</p>
 </div>
 <div>
 <h4 class="text-xs uppercase tracking-widest font-bold mb-6 text-brand-gold">Navigation</h4>
@@ -168,7 +150,6 @@ h1, h2, h3, h4, .font-serif, .font-display { font-family: 'Cormorant Garamond', 
 <li><a class="hover:text-brand-gold transition-colors" href="index.html">Home</a></li>
 <li><a class="hover:text-brand-gold transition-colors" href="services.html">Services</a></li>
 <li><a class="hover:text-brand-gold transition-colors" href="who-we-help.html">Who We Help</a></li>
-<li><a class="hover:text-brand-gold transition-colors" href="why-juniper.html">Why Juniper</a></li>
 <li><a class="hover:text-brand-gold transition-colors" href="insights.html">Insights</a></li>
 <li><a class="hover:text-brand-gold transition-colors" href="contact.html">Contact</a></li>
 </ul>
