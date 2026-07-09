@@ -63,24 +63,39 @@ h1, h2, h3, h4, .font-serif, .font-display { font-family: 'Cormorant Garamond', 
 <h2 class="text-4xl font-semibold mb-4">Book a Discovery Call</h2>
 <p class="text-lg font-light opacity-80">Schedule a 30-minute call to discuss your business needs and how our consulting services can drive your growth.</p>
 </div>
-<form class="space-y-6">
+<form class="space-y-6" action="https://formspree.io/f/maqggarp" method="POST">
+<input type="hidden" name="_subject" value="New enquiry from Juniper website"/>
+<input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off"/>
 <div class="grid md:grid-cols-2 gap-6">
 <div class="flex flex-col gap-2">
-<label class="text-xs uppercase tracking-wider font-semibold opacity-70">Name</label>
-<input class="bg-transparent border-b border-brand-green/30 focus:border-brand-gold outline-none py-3 transition-colors px-0 rounded-none border-t-0 border-x-0 focus:ring-0" placeholder="Your full name" type="text"/>
+<label class="text-xs uppercase tracking-wider font-semibold opacity-70" for="name">Name</label>
+<input class="bg-transparent border-b border-brand-green/30 focus:border-brand-gold outline-none py-3 transition-colors px-0 rounded-none border-t-0 border-x-0 focus:ring-0" id="name" name="name" placeholder="Your full name" type="text" required/>
 </div>
 <div class="flex flex-col gap-2">
-<label class="text-xs uppercase tracking-wider font-semibold opacity-70">Email Address</label>
-<input class="bg-transparent border-b border-brand-green/30 focus:border-brand-gold outline-none py-3 transition-colors px-0 rounded-none border-t-0 border-x-0 focus:ring-0" placeholder="email@company.com" type="email"/>
+<label class="text-xs uppercase tracking-wider font-semibold opacity-70" for="email">Email Address</label>
+<input class="bg-transparent border-b border-brand-green/30 focus:border-brand-gold outline-none py-3 transition-colors px-0 rounded-none border-t-0 border-x-0 focus:ring-0" id="email" name="email" placeholder="email@company.com" type="email" required/>
 </div>
 </div>
 <div class="flex flex-col gap-2">
-<label class="text-xs uppercase tracking-wider font-semibold opacity-70">Company</label>
-<input class="bg-transparent border-b border-brand-green/30 focus:border-brand-gold outline-none py-3 transition-colors px-0 rounded-none border-t-0 border-x-0 focus:ring-0" placeholder="Business name" type="text"/>
+<label class="text-xs uppercase tracking-wider font-semibold opacity-70" for="company">Company</label>
+<input class="bg-transparent border-b border-brand-green/30 focus:border-brand-gold outline-none py-3 transition-colors px-0 rounded-none border-t-0 border-x-0 focus:ring-0" id="company" name="company" placeholder="Business name" type="text"/>
 </div>
 <div class="flex flex-col gap-2">
-<label class="text-xs uppercase tracking-wider font-semibold opacity-70">How can we help?</label>
-<textarea class="bg-transparent border-b border-brand-green/30 focus:border-brand-gold outline-none py-3 transition-colors px-0 rounded-none border-t-0 border-x-0 focus:ring-0 resize-none" placeholder="Tell us briefly about your project or inquiry" rows="4"></textarea>
+<label class="text-xs uppercase tracking-wider font-semibold opacity-70" for="service">What do you need help with?</label>
+<select class="bg-transparent border-b border-brand-green/30 focus:border-brand-gold outline-none py-3 transition-colors px-0 rounded-none border-t-0 border-x-0 focus:ring-0" id="service" name="service">
+<option value="">Select an option</option>
+<option value="Accounting and bookkeeping">Accounting and bookkeeping</option>
+<option value="VAT">VAT</option>
+<option value="Payroll">Payroll</option>
+<option value="Self Assessment">Self Assessment</option>
+<option value="Management accounts">Management accounts</option>
+<option value="Finance operations">Finance operations</option>
+<option value="Not sure yet">Not sure yet</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs uppercase tracking-wider font-semibold opacity-70" for="message">How can we help?</label>
+<textarea class="bg-transparent border-b border-brand-green/30 focus:border-brand-gold outline-none py-3 transition-colors px-0 rounded-none border-t-0 border-x-0 focus:ring-0 resize-none" id="message" name="message" placeholder="Tell us briefly about your business or enquiry" rows="4" required></textarea>
 </div>
 <button class="px-10 py-4 uppercase text-xs tracking-widest font-bold transition-all rounded shadow-sm" style="background-color:#2D4A3E; color:#F5F0E8;" type="submit">
                         Send Message
